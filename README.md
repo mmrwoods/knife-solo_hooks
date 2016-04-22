@@ -40,6 +40,5 @@ end
 ```
 
 Note: you probably don't want to add callbacks like this directly to `knife.rb`
-as it gets loaded in circumstances where `Chef::Knife::SoloCook` won't exist,
-and it can get loaded multiple times, creating multiple callbacks. Much better
+as it can get loaded multiple times, creating multiple callbacks. Much better
 to write a separate plugin that does what you need, which is loaded once.
