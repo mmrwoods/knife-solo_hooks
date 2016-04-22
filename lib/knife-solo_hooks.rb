@@ -1,3 +1,4 @@
+require 'chef/knife'
 require 'hooks'
 
 module Chef::Knife::SoloHooks
@@ -16,5 +17,5 @@ module Chef::Knife::SoloHooks
 end
 
 class Chef::Knife::SoloCook
-  prepend SoloHooks
+  prepend Chef::Knife::SoloHooks
 end
